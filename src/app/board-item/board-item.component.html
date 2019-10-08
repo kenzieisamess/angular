@@ -1,0 +1,7 @@
+<p-card styleClass="ui-card-shadow">
+  {{ detail }}
+  <p-footer>
+    <i class="fa fa-thumbs-up" (click)="incrementVote()"></i>{{ getUpvote() }}
+    <i class="fa fa-thumbs-down" (click)="decrementVote()"></i>{{ getDownvote() }}
+  </p-footer>
+</p-card>

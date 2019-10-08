@@ -1,0 +1,9 @@
+<p-panel>
+  <span class="ui-float-label">
+    <input id="float-input" (keydown.enter)="complete()" [(ngModel)]="information" type="text" size="30" pInputText>
+    <label for="float-input">{{ prompt }}</label>
+  </span>
+  <div *ngFor="let item of items">
+    <app-board-item detail="{{item}}"></app-board-item>
+  </div>
+</p-panel>
